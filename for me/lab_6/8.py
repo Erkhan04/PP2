@@ -1,4 +1,5 @@
 n = int(input())
-s = input().split()
+a = list(map(int, input().split()))
 
-print(max(s, key=len))
+dot = sorted(set(a))
+print(*dot)

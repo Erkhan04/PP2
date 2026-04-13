@@ -1,4 +1,8 @@
 n = int(input())
-s = input().split()
+k = input().split()
+v = input().split()
 
-print(max(s, key=len))
+d = dict(zip(k, v))
+
+q = input()
+print(d.get(q, "Not found"))
